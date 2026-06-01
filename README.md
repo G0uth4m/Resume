@@ -14,4 +14,3 @@ pdflatex main.tex
 
 * LinkedIn: [@goutham](https://www.linkedin.com/in/goutham-ramesh-982220192/)
 * GitHub: [@goutham](https://github.com/G0uth4m)
-
