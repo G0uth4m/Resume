@@ -75,17 +75,19 @@
   {Coinbase}{Mar 2025 -- Present}
   {Software Engineer}{Bengaluru, India} \newline
   \resumeSubHeadingList
-      \resumeItem{\textbullet\ Engineered an automated gRPC diff testing framework to validate APIs between staging and production environments, proactively catching over \textbf{531} breaking changes and reducing production incidents by \textbf{30\%} across Coinbase in 2025.}
-      \resumeItem{\textbullet\ Developed a QA AI agent which reduced \textbf{40\%} cost spent on external QA service providers.}
+      \resumeItem{\textbullet\ Built and maintained \textbf{FORT}, a company-wide distributed test orchestration platform in Golang for gRPC/HTTP services, featuring a scheduler, orchestrator, and worker-queue architecture, adopted by \textbf{750 of 1,300} gRPC repos and reducing production incidents by \textbf{45\%} across the Consumer Organization within Coinbase.}
+      \resumeItem{\textbullet\ Developed a prompt-driven \textbf{QA AI Agent} integrated with FORT via a plugin, enabling test authors to define natural-language test objectives (e.g., localization audits) that autonomously launch BrowserStack sessions, navigate web pages, and detect issues, reducing external QA costs by \textbf{40\%}.}
+      \resumeItem{\textbullet\ Engineered a \textbf{gRPC Diff Tester} as a FORT plugin where teams define endpoints and inputs via YAML configs; the plugin invokes both dev and staging environments, compares responses, and generates HTML diff reports, proactively catching \textbf{500+} breaking changes across Coinbase in 2025.}
+      \resumeItem{\textbullet\ Created a \textbf{Test Generation MCP Server} that auto-discovers gRPC methods via server reflection using internally minted JWT tokens, and scaffolds test cases automatically, reducing test authoring time by \textbf{55\%}.}
+      \resumeItem{\textbullet\ Managed on-call for FORT and automated daily triage by building an \textbf{n8n pipeline} that fetches unhealthy Datadog monitors, performs AI-driven root cause analysis via LLM nodes integrated with Datadog and Sourcegraph MCPs, and generates a Google Doc with per-monitor RCA and confidence scores.}
   \resumeSubHeadingListEnd
   \resumeSubheading
       {Walmart Global Tech India}{Jul 2021 -- Mar 2025}
       {Software Engineer 3}{Bengaluru, India} \newline
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ Designed an End-to-End Ordering System for Walmart Store Remodels, achieving cost savings of approximately \textbf{\$27M} annually for international operations.}
-          \resumeItem{\textbullet\ Built a generic search framework to search by any column on any table in MSSQL Server.}
-          \resumeItem{\textbullet\ Implemented Auto Secret Rotation for MSSQL servers, saving \textbf{15 days} of manual effort per team annually.}
-          \resumeItem{\textbullet\ Reduced approximately \textbf{10 minutes} of downtime per microservice annually by eliminating the need for application restarts during configuration and secret changes, ensuring continuous service availability.}
+          \resumeItem{\textbullet\ Designed an End-to-End Ordering System for Walmart Store Remodels, facilitating remodeling across \textbf{5,000+ stores} in the US and achieving cost savings of approximately \textbf{\$27M} annually for international operations.}
+          \resumeItem{\textbullet\ Built a generic, schema-aware search framework for MSSQL Server enabling dynamic queries across any column and table, adopted across \textbf{8 microservices} spanning \textbf{50+ tables} and reducing ad-hoc query development effort by \textbf{30\%}.}
+          \resumeItem{\textbullet\ Implemented Auto Secret Rotation for MSSQL servers, saving \textbf{15 days} of manual effort per team annually and eliminating \textbf{10 minutes} of downtime per microservice per year, achieving zero-downtime secret rotations.}
           \resumeItem{\textbullet\ Received Annual Excellence Award twice (2022 and 2025) for mentoring engineers and significant contributions to customers.}
       \resumeSubHeadingListEnd
   \resumeSubheading
@@ -102,10 +104,7 @@
 \resumeSubHeadingList
   \resumeSubheading
       {PES University}{Bengaluru, India}
-      {B.Tech in Computer Science}{June 2017 -- May 2021} \newline
-      \resumeSubHeadingList
-        \resumeItem{\textbullet\ \textbf{GPA:} {8.78/10}.}
-      \resumeSubHeadingListEnd
+      {B.Tech in Computer Science $|$ GPA: 8.78/10}{June 2017 -- May 2021}
 \resumeSubHeadingListEnd
 
 
@@ -116,17 +115,8 @@
       {AI Daily Stock Analyzer}{Sep 2025 -- Nov 2025} 
       {Automated Market Research Pipeline $|$ \emph{\faGithub \hspace{.5pt} \href{https://github.com/G0uth4m/news-api}{\color{blue}GitHub}}}{Python, LLMs, RSS, HTML} \newline
       \resumeSubHeadingList
-          \resumeItem{\textbullet\ Engineered a daily automated pipeline to iterate through listed Indian market stocks, fetching the latest 10 news articles per stock from various RSS feeds.}
-          \resumeItem{\textbullet\ Integrated an LLM to process textual news data and assign a quantified buy rating (out of 10), augmented with stock-specific technical indicators.}
-          \resumeItem{\textbullet\ Built a reporting module to generate a comprehensive HTML summary report, distributed seamlessly via automated daily morning emails.}
-      \resumeSubHeadingListEnd
-      \resumeSubheading
-      {Rideshare - DBaaS}{Mar 2020 -- May 2020}
-      {Database as a Service $|$ \emph{\faGithub \hspace{.5pt} \href{https://github.com/G0uth4m/Rideshare-with-DBaaS}{\color{blue}GitHub}}}{Python, Docker, Postgres} \newline
-      \resumeSubHeadingList
-          \resumeItem{\textbullet\ Designed and implemented a scalable, highly available Database as a Service (DBaaS) model for a Rideshare application.}
-          \resumeItem{\textbullet\ Built two microservices: Users Service and Rides Service to manage respective data.}
-          \resumeItem{\textbullet\ Utilized Docker for containerization and deployment, RabbitMQ for messaging, and Zookeeper for distributed coordination.}
+          \resumeItem{\textbullet\ Engineered a daily automated pipeline scanning listed Indian equities, fetching the latest news via RSS feeds, and leveraging an LLM to assign quantified buy ratings augmented with stock-specific technical indicators.}
+          \resumeItem{\textbullet\ Built a reporting module to generate comprehensive HTML summary reports, distributed seamlessly via automated daily morning emails.}
       \resumeSubHeadingListEnd
 \resumeSubHeadingListEnd
 
@@ -134,8 +124,8 @@
 \section{Technical Skills}
 \resumeSubHeadingList
   \resumeItem{\textbf{Programming Languages}: Java, C/C++, Golang, Python, JavaScript, SQL}
-  \resumeItem{\textbf{Technologies}: Spring Boot, Azure SQL, Kubernetes, AWS, GCP, Docker, Kafka, Elasticsearch, Apache Spark}
-  \resumeItem{\textbf{Development Tools}: Git, Jenkins, Cursor, Claude Code, Agile}
+  \resumeItem{\textbf{Technologies}: Spring Boot, gRPC, PostgreSQL, Azure SQL, Kubernetes, AWS, GCP, Kafka, Elasticsearch, BrowserStack, React}
+  \resumeItem{\textbf{Development Tools}: Git, Cursor, Claude Code}
 \resumeSubHeadingListEnd
 
 \end{document}
